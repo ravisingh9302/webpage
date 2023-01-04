@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(115, 87, 83, 0.8);
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            align-items: center;
+            height: 60px;
+        }
+
+        nav::before {
+            content: "";
+            background-image: url(img/marsrover.jpg);
+            position: absolute;
+            width: 100%;
+            height: 1200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            border: 2px solid black;
+            margin: 0px 50px 0px 30px;
+            background-size: cover;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            padding: 5px;
+        }
+
+        ul li a {
+            display: block;
+            padding: 2px 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        ul li a:hover {
+            display: block;
+            padding: 2px 10px;
+            /* display: block; */
+            text-align: center;
+            text-decoration: none;
+            color: rgb(6, 6, 8);
+            background-color: white;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+
+        ul li a:active {
+            display: block;
+            padding: 2px 10px;
+            /* display: block; */
+            text-align: center;
+            text-decoration: none;
+            color: rgb(6, 6, 8);
+            background-color: rgb(153, 248, 177);
+            border-radius: 20px;
+            font-size: 18px;
+        }
+
+        #profile_pic {
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+            border: 4px solid black;
+            margin: 0px;
+            position: absolute;
+            right: 30px;
+            top: 10px;
+            cursor: pointer;
+        }
+
+        #menuimg {
+            position: absolute;
+            left: 100px;
+            top: 16px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        #profile {
+            position: absolute;
+            right: 65px;
+            top: 12px;
+        }
+
+        #searchbox {
+            background-color: none;
+            font-size: 18px;
+            border-radius: 30px;
+            margin: 5px 5px 5px 60px;
+            background-image: url(img/search.png);
+            background-repeat: no-repeat;
+            background-position: 5px 3px;
+            background-size: 18px;
+            padding: 3px 5px 3px 5px;
+        }
+
+        .menu_contant {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(110, 110, 110, 0.2);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .menu_ctant {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(179, 213, 245, 0.2);
+            z-index: 1;
+            text-align: center;
+        }
+
+        .menu_contant a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu_contant a:hover {
+            background-color: rgb(206, 207, 207);
+        }
+
+        .threelinemenu:hover .menu_contant {
+            display: block;
+        }
+
+        .catagry {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="logo">
+            <img src="img/logo.png" alt="" id="logoimg">
+        </div>
+        <div class="threelinemenu">
+            <div class="lala"> <img src="img/menu.png" alt="" id="menuimg"></div>
+            <div class="menu_contant">
+                <span class="catagry"><strong>CATOGARY</strong></span>
+
+                <a href="#">Universe</a>
+                <a href="#">animals</a>
+                <a href="#">history</a>
+                <a href="#">technolgy</a>
+
+            </div>
+        </div>
+        <ul class="menubar ">
+            <li class="option"> <a href="#">Home</a> </li>
+            <li class="option"> <a href="#">Facts sereies</a> </li>
+            <li class="option"> <a href="#">Vedios</a> </li>
+            <li class="option"> <a href="#">About</a> </li>
+            <li class="option"> <a href="#">Contect us</a> </li>
+
+            <li class="option" id="profile"> <a href="#">Profile</a> </li>
+        </ul>
+        <input type="search" name="search box" id="searchbox" placeholder>
+        <div>
+
+            <img src="img/ravipic.jpg" id="profile_pic" alt="">
+        </div>
+
+    </nav>
+    <div>
+        <i class="fad fa-turntable"></i>
+        <i class="fas fa-car"></i>
+        <i class="fas fa-file"></i>
+        <i class="fas fa-bars"></i>
+    </div>
+</body>
+
+</html>
